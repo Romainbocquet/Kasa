@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import '../../styles/Home/index.scss';
+import Banner from '../../components/Banner';
 
 function Home() {
   const [count, setCount] = useState(0)
 
   return (
-      <div>
+      <div className='home'>
+        <Banner />
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>

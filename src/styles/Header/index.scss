@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  padding: 45px 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header img {
+  height: 68px;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: #FF6060;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.header nav a:first-child {
+  margin-right: 57px;
+}
+
+.header nav .active {
+  text-decoration: underline;
+}
