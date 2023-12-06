@@ -1,17 +1,14 @@
-import { useState } from 'react'
 import '../styles/Home.scss';
 import Banner from '../components/Banner';
+import Logements from '../components/Logements';
+
 
 function Home() {
-  const [count, setCount] = useState(0)
 
   return (
       <div className='home'>
         <Banner />
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <div className="app">Hello, this is the home page!</div>
+        <Logements />
       </div>
   )
 }

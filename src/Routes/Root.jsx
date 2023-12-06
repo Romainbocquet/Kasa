@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Accommodation from '../pages/Accommodation';
 
 const Root = () => {
   return (
@@ -11,6 +12,7 @@ const Root = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/accommodation/:id" element={<Accommodation />} />
       </Routes>
       <Footer />
     </Router>

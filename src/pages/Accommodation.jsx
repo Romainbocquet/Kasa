@@ -1,14 +1,20 @@
-// import { useState } from 'react'
-import '../styles/Accommodation.scss';
+import { useParams } from 'react-router-dom';
+import logementsData from '../../data/logements.json';
 
 function Accommodation() {
-  // const [count, setCount] = useState(0)
+  const { id } = useParams();
+
+  const logement = logementsData.find((logement) => logement.id === id);
+
+  if (!logement) {
+    return <div>Logement non trouvé</div>;
+  }
 
   return (
-      <div className='accommodation'>
-        Page logement
-      </div>
-  )
+    <div className='logement-detail'>
+      {logement.title}
+    </div>
+  );
 }
 
-export default Accommodation
+export default Accommodation;

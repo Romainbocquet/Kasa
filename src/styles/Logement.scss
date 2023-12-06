@@ -1,0 +1,27 @@
+.logements {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  padding: 50px;
+  margin: 40px;
+  background: #F6F6F6;
+  justify-content: space-evenly;
+
+  .logement-box {
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #FF6060 70%, #813131 100%);
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: end;
+    text-decoration: none;
+
+    h3 {
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
