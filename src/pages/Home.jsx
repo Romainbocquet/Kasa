@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import '../../styles/Home/index.scss';
-import Banner from '../../components/Banner';
+import '../styles/Home.scss';
+import Banner from '../components/Banner';
 
 function Home() {
   const [count, setCount] = useState(0)

@@ -1,9 +1,9 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
-import '../../styles/Header/index.scss';
-import logo from '../../assets/kasa-logo.png';
+import '../styles/Footer.scss';
+import logo from '../assets/kasa-logo.png';
 
-function Header() {
+function Footer() {
 const location = useLocation();
 
   useEffect(() => {
@@ -11,19 +11,15 @@ const location = useLocation();
   }, [location.pathname]);
   
   return (
-    
-      <div className='header'>
-        <img src={logo} alt="Logo Kasa" />
+      <div className='footer'>
         <nav>
             <NavLink to="/">
-                Accueil
-            </NavLink>
-            <NavLink to="/about">
-                About
+              <img src={logo} alt="Logo Kasa" />
             </NavLink>
         </nav>
-        </div>
+        <span>© 2020 Kasa. All rights reserved</span>
+      </div>
   );
 }
 
-export default Header;
+export default Footer;
