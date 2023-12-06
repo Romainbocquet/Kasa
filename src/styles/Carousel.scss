@@ -1,0 +1,38 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+  height: 415px;
+  position: relative;
+  margin-bottom: 50px;
+  border-radius: 25px;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+
+    &.next {
+      transform: rotate(90deg);
+      right: 0;
+    }
+
+    &.prev {
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+

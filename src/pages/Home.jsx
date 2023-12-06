@@ -1,7 +1,7 @@
 // Home.jsx
 import '../styles/Home.scss';
 import Banner from '../components/Banner';
-import Logement from '../components/Logement';
+import Accommodation from '../components/Accommodation';
 import bannerHome from '../assets/bannerHome.png';
 
 function Home() {
@@ -11,7 +11,7 @@ function Home() {
         image={bannerHome} // Remplacez par le chemin de votre image
         title="Chez vous, partout et ailleurs"
       />
-      <Logement />
+      <Accommodation />
     </div>
   );
 }

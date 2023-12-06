@@ -3,7 +3,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Accommodation from '../pages/Accommodation';
+import AccommodationDetail from '../pages/AccommodationDetail';
 import Error404 from '../pages/Error404';
 
 const Root = () => {
@@ -13,7 +13,7 @@ const Root = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/accommodation/:id" element={<Accommodation />} />
+        <Route path="/accommodation/:id" element={<AccommodationDetail />} />
         <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />

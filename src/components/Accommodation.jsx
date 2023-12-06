@@ -2,7 +2,7 @@ import '../styles/Logement.scss';
 import { Link } from 'react-router-dom';
 import logementsData from '../../data/logements.json';
 
-function Logement() {
+function Accommodation() {
   return (
       <div className='logements'>
         {logementsData.map((logement) => (
@@ -15,4 +15,4 @@ function Logement() {
   );
 }
 
-export default Logement;
+export default Accommodation;

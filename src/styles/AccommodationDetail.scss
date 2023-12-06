@@ -1,0 +1,30 @@
+.logement-detail {
+  background-color: white;
+  margin: 0px 80px;
+
+  .logement-carac {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+
+    h1 {
+      color: #FF6060;
+      font-size: 36px;
+      font-weight: 500;
+    }
+  
+    .location {
+      color: #FF6060;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+  }
+
+  .accordion-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
