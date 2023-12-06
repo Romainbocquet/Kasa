@@ -4,16 +4,26 @@ import '../styles/Header.scss';
 import logo from '../assets/kasa-logo.png';
 
 function Header() {
-  const location = useLocation();
-
-  useEffect(() => {
-    document.title = `Kasa - ${location.pathname === '/' ? 'Accueil' : 'About'}`;
-  }, [location.pathname]);
+    const location = useLocation();
   
+    useEffect(() => {
+      if (location.pathname === '/') {
+        document.title = 'Kasa - Accueil';
+      } else if (location.pathname.includes('/accommodation')) {
+        document.title = 'Kasa - Accomodation';
+      } else if (location.pathname.includes('/about')) {
+        document.title = 'Kasa - About';
+      } else {
+        document.title = 'Kasa - 404';
+      }
+    }, [location.pathname]);
+
   return (
     
       <div className='header'>
-        <img src={logo} alt="Logo Kasa" />
+        <NavLink to="/">
+          <img src={logo} alt="Logo Kasa" />
+        </NavLink>
         <nav>
             <NavLink to="/">
                 Accueil

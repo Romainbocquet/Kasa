@@ -1,16 +1,19 @@
-// import { NavLink, useLocation } from 'react-router-dom';
-// import { useEffect } from 'react';
-import banner from '../assets/banner.png';
+// Banner.jsx
+import PropTypes from 'prop-types';
 import '../styles/Banner.scss';
 
-
-function Banner() {  
+function Banner({ image, title }) {
   return (
     <div className='banner'>
-      <img src={banner} alt="" />
-      <h1>Chez vous, partout et ailleurs</h1>
+      <img src={image} alt="" />
+      <h1>{title}</h1>
     </div>
   );
 }
+
+Banner.propTypes = {
+  image: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default Banner;

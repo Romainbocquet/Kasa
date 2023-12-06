@@ -1,15 +1,8 @@
-import { NavLink, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/Footer.scss';
 import logo from '../assets/kasa-logo.png';
 
-function Footer() {
-const location = useLocation();
-
-  useEffect(() => {
-    document.title = `Kasa - ${location.pathname === '/' ? 'Accueil' : 'About'}`;
-  }, [location.pathname]);
-  
+function Footer() {  
   return (
       <div className='footer'>
         <nav>

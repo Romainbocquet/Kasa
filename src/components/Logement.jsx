@@ -1,18 +1,18 @@
 import '../styles/Logement.scss';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import logementsData from '../../data/logements.json';
 
-function Logement({ id, title }) {
+function Logement() {
   return (
-    <Link to={`/accommodation/${id}`} className="logement-box">
-      <h3>{title}</h3>
-    </Link>
+      <div className='logements'>
+        {logementsData.map((logement) => (
+          <Link key={logement.id} to={`/accommodation/${logement.id}`} className="logement-box">
+            <h3>{logement.title}</h3>
+            <img src={logement.cover} alt="logement-cover" className='logement-cover' />
+          </Link>
+        ))}
+      </div>
   );
 }
-
-Logement.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-};
 
 export default Logement;

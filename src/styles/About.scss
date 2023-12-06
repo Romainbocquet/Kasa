@@ -1,5 +1,14 @@
-$primary-color: #3498db;
-
 .about {
-  background-color: $primary-color;
+  background-color: white;
+  margin: 0px 80px;
+
+  .banner {
+    margin-bottom: 50px;
+  }
+
+  .accordion-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
