@@ -35,4 +35,13 @@
     z-index: 2;
     width: 700px;
   }
+
+  @media screen and (max-width: 768px) {
+    height: 111px;
+    
+    h1 {
+      width: 300px;
+      font-size: 24px;
+    }
+  }
 }

@@ -10,4 +10,11 @@
     border-radius: 10px;
     margin-right: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    .tag {
+      margin-bottom: 20px;
+    }
+  }
 }
