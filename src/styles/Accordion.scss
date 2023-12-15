@@ -15,6 +15,12 @@
   &.open {
     .accordion-content {
       max-height: 500px;
+      ul {
+        list-style: none;
+        li {
+          margin: 10px;
+        }
+      }
     }
     .accordion-title {
       .chevron {
@@ -38,6 +44,12 @@
     .chevron {
       transform: rotate(180deg);
       transition: transform 0.3s ease-in-out;
+      svg {
+        width: 34px;
+        height: 32px;
+        fill :none;
+      }
+      
     }
   }
 
@@ -50,6 +62,13 @@
 
     p {
       padding: 14px 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &.large,
+    &.medium {
+      width: auto;
     }
   }
 }
