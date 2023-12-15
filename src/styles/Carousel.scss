@@ -24,6 +24,12 @@
     border: none;
     position: absolute;
 
+    svg {
+      width: 33px;
+      height: 32px;
+      fill: none;
+    }
+    
     &.next {
       transform: rotate(90deg);
       right: 0;
@@ -32,6 +38,10 @@
     &.prev {
       transform: rotate(-90deg);
     }
+  }
+  @media screen and (max-width: 768px) {
+    height: 255px;
+
   }
 }
 
