@@ -31,12 +31,12 @@ function AccommodationDetail() {
       </div>
       <div className='accordion-container'>
           <Accordion
-            title="description"
+            title="Description"
             content={logement.description}
             setLargeur='medium'
           />
           <Accordion
-            title="equipments"
+            title="Équipements"
             content={logement.equipments}
             setLargeur='medium'
           />
