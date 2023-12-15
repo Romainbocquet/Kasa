@@ -5,10 +5,7 @@ import Accordion from '../components/Accordion';
 import bannerAbout from '../assets/bannerAbout.png';
 import accordionData from '../../data/accordionAbout.json';
 
-
 function About() {
-  // const [count, setCount] = useState(0)
-
   return (
       <div className='about'>
         <Banner
@@ -25,7 +22,6 @@ function About() {
           />
         ))}
         </div>
-
       </div>
   )
 }
