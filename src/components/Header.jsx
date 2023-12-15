@@ -12,7 +12,7 @@ function Header() {
       } else if (location.pathname.includes('/accommodation')) {
         document.title = 'Kasa - Accomodation';
       } else if (location.pathname.includes('/about')) {
-        document.title = 'Kasa - About';
+        document.title = 'Kasa - A Propos';
       } else {
         document.title = 'Kasa - 404';
       }
@@ -29,7 +29,7 @@ function Header() {
                 Accueil
             </NavLink>
             <NavLink to="/about">
-                About
+              A Propos
             </NavLink>
         </nav>
         </div>

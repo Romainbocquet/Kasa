@@ -3,25 +3,40 @@
   padding: 45px 80px;
   align-items: center;
   justify-content: space-between;
-}
 
-.header img {
-  height: 68px;
-}
+  img {
+    height: 68px;
+  }
 
-.header nav a {
-  text-decoration: none;
-  color: #FF6060;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-}
+  nav {
+    .active {
+      text-decoration: underline;
+    }
 
-.header nav a:first-child {
-  margin-right: 57px;
-}
+    a {
+      text-decoration: none;
+      color: #FF6060;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+    }
 
-.header nav .active {
-  text-decoration: underline;
+    a:first-child {
+      margin-right: 57px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+
+    img {
+      height: 45px;
+    }
+
+    nav {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
 }
