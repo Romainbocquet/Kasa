@@ -9,6 +9,12 @@
   margin-bottom: 50px;
   border-radius: 25px;
 
+  .image-counter {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+  }
+
   img {
     object-fit: cover;
     width: 100%;

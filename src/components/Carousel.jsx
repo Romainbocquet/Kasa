@@ -39,6 +39,9 @@ function Carousel({ images }) {
             </svg>
         </button>
       )}
+      {shouldDisplayButtons && (
+      <p className="image-counter">{currentIndex + 1} / {images.length}</p>
+      )}
     </div>
   );
 }
